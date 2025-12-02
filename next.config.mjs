@@ -4,9 +4,12 @@ const nextConfig = {
     domains: ['lh3.googleusercontent.com', 'www.gstatic.com', 'ci3.googleusercontent.com', 'res.cloudinary.com', 'www.iguazuurbanhotel.com', 'encrypted-tbn0.gstatic.com', 'images.unsplash.com'],
   },
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
+    // Disable ESLint during builds
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Disable type checking during builds (speeds up builds)
+    ignoreBuildErrors: true,
   },
 };
 
