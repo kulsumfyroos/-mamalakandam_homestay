@@ -30,7 +30,7 @@ export default async function Main() {
       <div className="home-content absolute top-0 left-0 h-full w-full pl-10 flex justify-end items-end z-20 lg:pl-80 lg:pr-8 pointer-events-none">
         <div className="home-data container px-6 grid gap-y-4">
           <div className="text-end">
-            <span className="inline-block text-sm md:text-base text-green-300 font-medium tracking-widest uppercase mb-2 animate-fade-in">🍃 Welcome to Nature's Paradise</span>
+            <span className="inline-block text-sm md:text-base text-green-300 font-medium tracking-widest uppercase mb-2 animate-fade-in">🍃 Welcome to Nature&apos;s Paradise</span>
           </div>
           <h1 className="home-title text-[36px] text-background text-end lg:text-[3.5rem] font-bold leading-tight">
             <span className="font-dancing text-[42px] lg:text-[4.5rem] text-amber-400 drop-shadow-lg">{TEXT.homeTitle1}</span>
