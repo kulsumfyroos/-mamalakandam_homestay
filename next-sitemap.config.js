@@ -1,30 +1,19 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: 'https://www.iguazuurbanhotel.com',
+  siteUrl: 'https://mamalakandam-homestay.vercel.app',
   changefreq: 'daily',
   priority: 0.7,
   sitemapSize: 5000,
   generateRobotsTxt: true,
-  exclude: ['/login', '/verify', '/register', '/dashboard', '/dashboard/**'],
-  alternateRefs: [
-    {
-      href: 'https://www.iguazuurbanhotel.com/pt',
-      hreflang: 'pt',
-    },
-    {
-      href: 'https://www.iguazuurbanhotel.com/en',
-      hreflang: 'en',
-    },
-  ],
+  exclude: [],
   // Default transformation function
   transform: async (config, path) => {
     return {
-      loc: path, // Se exportará como http(s)://<config.siteUrl>/<path>
+      loc: path,
       changefreq: config.changefreq,
       priority: config.priority,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
-      alternateRefs: config.alternateRefs ?? [],
     }
   },
   additionalPaths: async (config) => [
@@ -35,7 +24,6 @@ module.exports = {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/login', '/verify', '/register', '/dashboard', '/dashboard/**'],
       },
     ],
   },

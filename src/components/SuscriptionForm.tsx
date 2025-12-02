@@ -1,61 +1,61 @@
 "use client";
 
-import { FieldError, useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { RiArrowRightLine } from "@remixicon/react";
 import { toast } from "sonner";
 import TEXT from "@/lang/es.json";
 import Button from "@/components/ui/Button";
-import { handleEmail } from "@/lib/brevo";
+import { useState, FormEvent } from "react";
 
 export default function SuscriptionForm() {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
 
-  const validations = z.object({
-    email: z.string().email(),
-  });
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
-  const { register, handleSubmit, watch, formState: { errors }, reset } = useForm({
-    resolver: zodResolver(validations),
-    mode: 'onBlur'
-  });
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setError("");
 
-  // console.log('form state:', JSON.stringify(watch(), null, 2)) // { "email": "123" }
-  
-  // console.log('email: ', watch('email')) // 123, una abreviacion de (e.target.value)
+    if (!email) {
+      setError("Email is required");
+      return;
+    }
 
-  // "errors" Se dispara con el evento "submit", e impide que este continue.
-  // console.log('errors: ', errors) // {email: { message: 'INVALID_EMAIL' } }
+    if (!validateEmail(email)) {
+      setError("Invalid email address");
+      return;
+    }
+
+    // For static site, just show success message
+    toast.success(`${TEXT.joinSuccess} ${email}`);
+    setEmail("");
+  };
   
   return (
     <>
 
       <form 
         className="join-form relative grid gap-y-4"
-        onSubmit={handleSubmit(({email}) => {
-          try {
-            handleEmail(email);
-            toast.success(`${TEXT.joinSuccess} ${email}`);
-          } catch (error: any) {
-            toast.error(`${error.message}`);
-          } finally {
-            reset();
-          }
-        })}
-        aria-label="Formulario de suscripción"
+        onSubmit={handleSubmit}
+        aria-label="Subscription form"
       >
-        <input {...register("email")}
+        <input 
           className="join-input py-5 px-4"
           type="email"
           id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder={TEXT.joinPlaceholder1}
-          aria-label="Formulario de suscripción"
+          aria-label="Email subscription"
         />
 
-        {errors.email && <label className='footer-input-error text-red-600 text-xs absolute top-[-.75rem] right-6 translate-y-[-.5rem]' htmlFor='email'>{errors.email ? (errors.email as FieldError).message : ''}</label>}
+        {error && <label className='footer-input-error text-red-600 text-xs absolute top-[-.75rem] right-6 translate-y-[-.5rem]' htmlFor='email'>{error}</label>}
 
         <Button 
-          className="move-right bg-primary-2" type="submit" aria-label="Enviar formulario"
+          className="move-right bg-primary-2" type="submit" aria-label="Submit form"
           text={TEXT.joinButtonText1}
           endIcon={<RiArrowRightLine className="w-5 h-5" />}
         />
