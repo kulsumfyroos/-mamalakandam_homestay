@@ -1,0 +1,138 @@
+{
+  "inicio": "Home",
+  "ubicacion": "Location",
+  "alojamiento": "Stay",
+  "navText3": "Photos",
+  "navText4": "Services",
+  "authText1": "Logout",
+  "authText2": "Login",
+  "accountMenuText1": "My Account",
+  "accountMenuText2": "Settings",
+  "accountMenuText3": "Account Settings",
+  "backButtonText1": "Back",
+  "moreButtonText1": "Learn More",
+  "tabMenuTitle1": "Notes",
+  "tabMenuTitle2": "Bookings",
+  "tabMenuTitle3": "Payments",
+  "tabMenuTextAlert1": "You don't have any bookings yet.",
+  "reviewPlaceholderText1": "Leave your comment…",
+  "reviewButtonText1": "Comment",
+  "authToastText1": "Welcome",
+  "homeTitle1": "Mamalakandam",
+  "homeTitle2": "Homestay",
+  "homeTitle3": "& Resorts",
+  "homeDescription1": "Happiness is Having Natural Beauty 🍃 Escape to the serene paradise of Mamalakandam, Kuttampuzha, Thattekkad - where nature embraces you.",
+  "homeButtonTitle1": "Book Now",
+  "socialLinkTitle1": "Follow Us",
+  "locationTitleA": "Where We Are",
+  "locationTitleB": "Located",
+  "locationTitle1": "Mamalakandam, Kuttampuzha",
+  "locationTitle2": "Thattekkad, Kerala 📍",
+  "locationDescription1": "Nestled in the heart of nature, surrounded by lush forests, exotic birds, and peaceful rivers. A perfect getaway from the city life.",
+  "locationTextGroup1": [
+    "Thattekkad Bird Sanctuary",
+    "5 km away"
+  ],
+  "locationTextGroup3": [
+    "Bhoothathankettu Dam",
+    "8 km away"
+  ],
+  "locationTextGroup2": [
+    "Kuttampuzha Town",
+    "2 km away"
+  ],
+  "locationTextGroup4": [
+    "Idamalayar Dam",
+    "15 km away"
+  ],
+  "locationTextGroup5": [
+    "Cochin International Airport",
+    "45 km away"
+  ],
+  "locationTextGroup6": [
+    "Ernakulam Railway Station",
+    "50 km away"
+  ],
+  "serviceTitle1": "Welcome to",
+  "serviceSectionTitle1": "Accommodation &",
+  "serviceSectionTitle2": "Services",
+  "servicesDescription1": "Experience authentic Kerala hospitality at Mamalakandam Homestay. Enjoy comfortable rooms, home-cooked meals, and breathtaking views of the Western Ghats.",
+  "serviceTextGroup1": [
+    "Rooms",
+    "Family & Double"
+  ],
+  "serviceTextGroup2": [
+    "WIFI",
+    "Free"
+  ],
+  "serviceTextGroup3": [
+    "Meals",
+    "Homemade Kerala"
+  ],
+  "serviceTextGroup4": [
+    "Check-in",
+    "Flexible"
+  ],
+  "serviceTextGroup5": [
+    "Nature Trails",
+    "Guided Tours"
+  ],
+  "serviceTextGroup7": [
+    "Hot Water",
+    "24 Hours"
+  ],
+  "serviceTextGroup6": [
+    "Fresh Air",
+    "Natural Breeze"
+  ],
+  "serviceTextGroup8": [
+    "Bird Watching",
+    "Expert Guides"
+  ],
+  "serviceTextGroup9": [
+    "Pets",
+    "Welcome"
+  ],
+  "serviceTextGroup10": [
+    "Housekeeping",
+    "Daily"
+  ],
+  "textClose1": "Close",
+  "brandName1": "Mamalakandam Homestay",
+  "brandName2": "& Resorts",
+  "testimonilasTitle1": "What Our",
+  "testimonilasTitle2": "Guests Say",
+  "testimonilasDescription1": "100% verified reviews from guests who truly experienced the beauty of Mamalakandam with us.",
+  "atractivos": "Attractions",
+  "exploreTitle1": "Explore Nature",
+  "exploreTitle2": "Discover Paradise",
+  "exploreDescription1": "Thattekkad Bird Sanctuary, known as the richest bird habitat in peninsular India, is just minutes away. Explore pristine forests, spot over 300 species of birds, trek through scenic trails, and immerse yourself in the untouched beauty of Kerala's Western Ghats. Here, the melody of birds and rustling leaves create an unforgettable experience.",
+  "descubreNovedades": "Discover our latest updates and stay informed about nature tours and seasonal activities around Mamalakandam.",
+  "novedades": "News",
+  "excursiones": "Tours",
+  "noHayNovedades": "No news yet.",
+  "joinTitle1": "Your Journey",
+  "joinTitle2": "Starts Here",
+  "joinText1": "For more information or to make a reservation, send us an email. We'd be happy to help you plan your perfect nature escape.",
+  "joinPlaceholder1": "Enter your email address",
+  "joinButtonText1": "Send",
+  "joinSuccess": "Check your inbox: ",
+  "resenhas": "Reviews",
+  "footerTitle1": "Follow Us",
+  "footerTitle2": "Address",
+  "contacto": "Contact",
+  "footerTitle4": "Nearby Attractions",
+  "footerTitle5": "Support",
+  "footerInfoDirection": "Mamalakandam, Kuttampuzha, Thattekkad, Kerala",
+  "footerInfoPhone": "+91 9526484707",
+  "footerInfoEmail": "mamalakandam.homestay@gmail.com",
+  "footerInfoParkArg": "Thattekkad Bird Sanctuary",
+  "footerInfoParkBr": "Bhoothathankettu Dam",
+  "footerInfoMigrationBr": "Idamalayar Dam & Reservoir",
+  "footerInfoAirport": "Cochin International Airport",
+  "footerInFullMoon": "Forest Night Safari Tours",
+  "footerInfoFaq": "FAQ",
+  "footerTerms": "Terms & Conditions",
+  "footerInfoPolicy": "Privacy Policy",
+  "footerInfoDeveloper": "Developer"
+}

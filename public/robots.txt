@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /verify
+Disallow: /register
+Disallow: /dashboard
+Disallow: /dashboard/**
+
+# Host
+Host: https://www.iguazuurbanhotel.com
+
+# Sitemaps
+Sitemap: https://www.iguazuurbanhotel.com/sitemap.xml
