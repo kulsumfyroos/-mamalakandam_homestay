@@ -1,14 +1,9 @@
 # *
 User-agent: *
 Allow: /
-Disallow: /login
-Disallow: /verify
-Disallow: /register
-Disallow: /dashboard
-Disallow: /dashboard/**
 
 # Host
-Host: https://www.iguazuurbanhotel.com
+Host: https://mamalakandam-homestay.vercel.app
 
 # Sitemaps
-Sitemap: https://www.iguazuurbanhotel.com/sitemap.xml
+Sitemap: https://mamalakandam-homestay.vercel.app/sitemap.xml

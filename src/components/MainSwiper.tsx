@@ -13,9 +13,7 @@ export default function MainSwiper() {
 
   // Nature-themed background images for Mamalakandam Homestay
   const natureImages = [
-    'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920&q=80', // Kerala backwaters
-    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80', // Mountain forest
-    'https://images.unsplash.com/photo-1518173946687-a4c036bc3c95?w=1920&q=80', // Tropical forest
+    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80', // Mountain view
   ];
 
   const swiperParams: SwiperOptions = {
