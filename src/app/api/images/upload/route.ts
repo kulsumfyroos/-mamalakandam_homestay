@@ -3,6 +3,9 @@ import { v2 as cloudinary } from "cloudinary"
 import type { UploadApiResponse, UploadApiErrorResponse } from "cloudinary"
 import config from "@/config"
 
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+
 export default interface ImageDataResponse {
   public_id: string
   secure_url: string

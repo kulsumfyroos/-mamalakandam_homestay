@@ -3,6 +3,9 @@ import { v2 as cloudinary } from 'cloudinary';
 import { removeImageAction } from "@/actions/image.actions";
 import config from "@/config";
 
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+
 // Configuration
 cloudinary.config({ 
   cloud_name: config.CLOUDINARY_CLOUD_NAME, 

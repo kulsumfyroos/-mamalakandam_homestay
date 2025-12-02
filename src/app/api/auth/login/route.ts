@@ -3,6 +3,10 @@ import { createToken, setTokenCookie } from "@/lib/jwt"
 import { getAdminByUsernameAction } from "@/actions/admin.actions"
 import { compare } from "bcrypt"
 
+// Force Node.js runtime for bcrypt compatibility
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+
 // Simulación de base de datos de usuarios (en producción, usa una base de datos real)
 // const user = {
 //   id: 1,
